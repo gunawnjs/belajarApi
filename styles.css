@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #d5d5d5;
+    color: #ff5837;
+}
+.search-bar{
+    justify-content: center;
+    width: unset;
+}
+.search-bar input{
+    border: 1px solid #d5d5d5;
+    border-radius: 5px 0 0 5px;
+}
+.search-bar input:focus{
+    outline: none;
+    border: 1px solid #ff5837;
+}
+.search-bar input{
+    padding-left: 12px;
+    padding-right: 12rem;
+    font-size: 14px;
+}
+.search-bar button{
+    border: 1px solid #d5d5d5;
+}
+.search-bar button:hover{
+    border: 1px solid #d5d5d5;
+    background-color: #d5d5d5;
+}
+.header-wrap h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+.menu ul{
+    margin: 0 auto;
+    display: flex;
+}
+.menu ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #6c757d;
+}
+.menu ul li a span {
+    line-height: 43px;
+}
+.menu-divider{
+    font-weight: 200;
+    color: #6c757d;
+    font-size: 30px;
+}
+.menu button{
+    background-color: #fff;
+    border: 1px solid #ff5837;
+    border-radius: 5px;
+    color: #ff5837;;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 6px;
+}
+.menu button:hover{
+    border: 1px solid #ff5837;
+    background-color: #ff5837;
+    color: #fff;
+}
+.menu button:active{
+    background-color: #ee4d2d;
+    color: #fff;
+}
+.burger{
+    display: none;
+}
+.loading-content{
+    background-color: #f5f5f5;
+}
+.loading-content > .container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.content{
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.content > .container {
+    display: flex;
+    justify-content: space-around;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.card{
+    width: 10rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    margin:3px;
+}
+.card:hover{
+    box-shadow: 0 2px 9px 0 rgb(0 0 0 / 11%);
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card-container{
+    padding: 10px 13px;
+    border-top: 1px solid #d5d5d5;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+.card-container p {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.card-container h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: #ee4d2d;
+}
+.list-barang{
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    width: 25em;
+    height: 30rem;
+    background-color: #fff;
+    margin-top: 3px;
+}
+.list-barang table{
+    font-size: 14px;
+}
+.list-barang table .btn-qty {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px 0 0 5px;
+    background-color: #f5f5f5;
+    padding: 0 4px;
+}
+.list-barang table .btn-right{
+    border-radius: 0 5px 5px 0;
+}
+.list-barang table .btn-qty:hover{
+    background-color: #d5d5d5;
+}
+.list-barang table .btn-right:hover{
+    background-color: #d5d5d5;
+}
+.list-barang table .btn-qty:active{
+    background-color: #f5f5f5;
+}
+.list-barang table .btn-right:active{
+    background-color: #f5f5f5;
+}
+.list-barang table .hapus{
+    border: 1px solid #f00e0e;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #f00e0e;
+    padding: 4px 8px;
+    font-size: 16px;
+}
+table input{
+    border-radius: 5px;
+}
+.list-barang table .hapus:hover{
+    background-color: #f00e0e;
+    color: #fff;
+}
+.list-barang table .hapus:active{
+    background-color: red;
+    color: #fff;
+}
+.list-barang > .card-container{
+    margin-top: 5rem;
+}
+.list-barang > .card-container p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.list-barang > .card-container button{
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    padding: 15px 3rem;
+}
+.total-list-barang{
+    display: flex;
+    justify-content: space-between;
+}
+.action-list-barang{
+    display: flex;
+    justify-content:  space-between;
+    margin-top: 10px;
+}
+.action-list-barang > .bayar{
+    background-color: #ff5837;
+    color: white;
+    outline: none;
+}
+.action-list-barang > .batalkan{
+    color: #d9534f;
+}
+.action-list-barang > .batalkan:hover{
+    background-color: #d9534f;
+    color: #fff;
+}
+.action-list-barang span{
+    margin-right: 5px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #6c7686;
+}
+.footer-left {
+    margin-top: 2rem;
+    align-items: baseline;
+}
+.footer-left p{
+    font-weight: 200;
+}
+.footer-menu ul {
+    list-style: none;
+}
+.footer-menu ul li{
+    display: flex;
+}
+.footer-menu span{
+    margin-right: 5px;
+}
+.footer-menu > .contact-me {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+.footer-menu ul li p {
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+.footer-menu span{
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 8px;
+}
+.footer-menu p {
+    font-size: 14px;
+}
+.footer-copyright{
+    border-top: 1px solid #d5d5d5 ;
+    color: #6c757d ;
+}
+.footer-copyright > .container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.footer-copyright p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* untuk laman detail_brg  */
+
+
+.card-detail{
+   border-radius: 5px;
+   width: 70rem;
+   padding: 200px;
+   background-color: #fff;
+ }
+ .card-detail img{
+    margin-right: 5rem;
+    width: 100%;
+ }
+
+
+/* Responsive Breakout */
+
+/* tablet res */
+
+@media only screen and (max-width: 1000px){
+    header h1{
+        display: none;
+    } 
+    .header-wrap{
+        justify-content: space-around;
+    }
+    .burger{
+        display: block;
+        margin-right: 2rem;
+    }
+    .menu ul{
+        display: none;
+    }
+    .card-wrapper{
+        flex-wrap: wrap;
+    }
+    .content .container{
+        margin: 0 auto;
+    }
+    .card{
+        width: 35%;
+        margin: 3px;
+    }
+    .card-container{
+        padding: 10px 15px;
+    }
+    .card-container p{
+        font-size: 10px;
+    }
+    .card-container h3{
+        font-size: 13px;
+    }
+}
+
+/* mobile res */
+
+@media only screen and (max-width: 600px){
+    header h1{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .menu ul{
+        display: none;
+    }
+    .card-wrapper{
+        justify-content: center;
+        /* jika screen menyentuh 600px maka turun ke bawah */
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 20%;
+        margin: 2px;
+    }
+    .card-container{
+        padding: 10px 8px;
+    }
+    .card-container p{
+        font-size: 8px;
+    }
+    .card-container h3{
+        font-size: 10px;
+    }
+}

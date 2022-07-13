@@ -1,0 +1,9 @@
+https://kotakode.com/blogs/3595/Membuat-Kartu-List-Dengan-Fetch-API
+https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
+
+
+
+https://id.quora.com/Bagaimana-menggunakan-async-dan-await-pada-Javascript
+
+
+untuk mengkonsumsi sebuah API harus dilewatkan dengan fungsi async 
